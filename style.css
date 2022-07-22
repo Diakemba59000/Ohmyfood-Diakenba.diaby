@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Shrikhand&display=swap');
+
+*{
+box-sizing: border-box;
+}
+
+
+body{
+height: 100%;
+width: 100%;
+font-family: Roboto,sans-serif;
+}
+
+
+.logo{
+text-align: center;
+font-family: Shrikhand,"cursive";
+margin: 0;
+box-shadow: 0px 3px 3px 1px gray;
+padding: 8px;
+position: relative;
+}
+
+.city{
+background-color: #F2F2F2;
+text-align: center;
+padding: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+}
+
+.city i{
+font-size: 1.2rem;   
+}
+
+
+.explorer{
+text-align: center;
+background-color: #fafafa;
+padding: 20px;
+}
+
+
+.explorer h2{
+margin-top: 30px;
+font-size: 25px;
+}
+
+.explorer p{
+font-family: Roboto;
+font-size: 18px;
+font-weight: 100;
+color: #000;
+}
+
+
+.bnt{
+color: white;
+font-weight: bold;
+border-radius: 50px;
+font-size: 20px;
+padding: 15px;
+border: none;
+background: linear-gradient(170deg, #ff79da, #9356dc);
+box-shadow: 0px 0px 12px 0px gray;
+transition: 250ms;
+}
+
+.bnt:hover{
+transform: scale(1.04);
+}
+
+.functioning ol{
+display: flex;
+flex-wrap: wrap;
+}
+
+.functioning li{
+display: flex;
+background-color: #f6f6f6;
+padding: 16px;
+margin: 16px;
+gap: 16px;
+flex-grow: 1;
+border-radius: 20px 20px;
+box-shadow:2px 1px 8px -3px black; 
+transition: 250ms;
+list-style-type: none;
+}
+
+.functioning li :hover{
+transform: scale(1.02);
+}
+
+.functioning i.fas{
+margin-right: -2px;
+}
+
+.number{
+border-radius: 50%;
+}
+
+.functioning p{
+margin: 0;
+height: 24px;
+width: 24px;
+margin-left: -26px;
+border-radius: 100%;
+border: 1px solid;
+text-align: center;
+background: #9356dc;
+color: white;
+}
+
+.functioning h2{
+margin-left: 30px;
+}
+
+.restaurants{
+background-color: #f6f6f6;
+padding: 2rem 2rem;
+}
+
+.restaurants h2{
+margin-bottom: 32px;
+}
+
+
+.cards_container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+.cards_container a{
+flex-basis: 35%;
+height: 365px;
+background-color: white;
+border-radius: 1rem;
+box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
+text-decoration: none;
+color: black;
+}
+
+
+.cards img{
+height: 250px; 
+width: 100%;
+object-fit: cover;
+border-radius: 1rem 1rem 0 0;
+}
+
+.new{
+position: absolute;
+background-color: #99E2D0;
+color: rgba(29, 130, 105, 0.8117647059);
+font-weight: bold;
+margin-top: 1rem;
+margin-left: 25%;
+}
+
+.cards_description{
+margin-left: 1rem;
+}
+
+.far.fa-heart{
+font-size: 2rem;
+margin-right: 10px;
+position: relative;
+bottom: 64px;
+display: flex;
+justify-content: flex-end;
+}
+
+.footer_text{
+background-color: rgb(61, 59, 59);
+text-align: center;
+}
+
+.footer_text i{
+color: white;
+padding: 5px 5px 5px 0px;
+}
+
+.footer_text h2{
+color: white;
+font-family: Shrikhand,"cursive";
+}
+
+
+.footer__liste{
+color: white;
+text-decoration: none;
+}
+
+
+@media screen and (max-width: 800px){
+      
+    .functioning ol{
+        flex-direction: row;
+    }
+
+
+    .cards_container a{
+        min-width: 100%;
+    }
+}
+
