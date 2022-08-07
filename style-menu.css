@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Shrikhand&display=swap');
+
+
+
+/*RESTAURANT 1 */
+
+.logo{
+text-align: center;
+font-family: Shrikhand,"cursive";
+margin: 0;
+box-shadow: 0px 3px 3px 1px gray;
+padding: 8px;
+position: relative;
+}
+
+.far.fa-heart{
+font-size: 2rem;
+margin-right: 10px;
+position: relative;
+bottom: 64px;
+display: flex;
+justify-content: flex-end;
+}
+        
+.fas.fa-heart{
+display: flex;
+justify-content: flex-end;
+font-size: 2rem;
+margin-right: 10px;
+position: relative;
+bottom: 96px;
+}
+        
+.heart_color{
+color: transparent;
+background: linear-gradient(#9356DC, #FF79DA);
+background-clip: text;
+-webkit-background-clip: text;
+opacity: 0;
+}
+        
+        
+.heart_color:hover{
+opacity: 1;
+}
+        
+        
+               
+.img_palette{
+width: 100%;
+height: 60vh;
+object-fit: cover
+}
+                
+.bloc_restaurant h2{
+font-family: Shrikhand,"cursive";
+}
+                
+.bloc_restaurant{
+border-radius: 20px 20px 0px 0px;
+background: #f6f6f6;
+margin-top: -112px;
+position: relative;
+padding: 1rem;  
+width: 70%;
+margin-left: 14%;
+}
+                
+       
+.menus_restaurant{
+background: #f6f6f6;   
+}
+    
+    
+.menus_entrées{
+display: flex;
+flex-direction: column;
+}
+    
+.title{
+border-bottom: 4px solid #99E2D0;
+width: 5%;
+}
+    
+      
+.items__menus{
+display: flex;
+background-color: white;
+width: 80%;
+border-radius: 20px;
+height: 70px;
+padding-left: 15px;
+border-radius: 20px;
+margin: 10px;
+overflow: hidden;
+box-shadow: 2px 1px 8px -3px black;
+white-space: nowrap; 
+cursor: pointer; 
+}
+    
+    
+.menus_description h3,
+.menus_description P{
+margin: 0;
+padding: 0;
+}
+    
+    
+.menus_description{
+margin-top: 10px;
+}
+    
+
+.menus_items_price{
+margin-left: auto;
+padding: 1rem;
+}
+    
+    
+.menus_icon_slide{
+width: 4rem;
+background-color: #99E2D0;
+margin-right: -4rem;
+transition: all 500ms;
+border-radius: 0 1rem 1rem 0;
+display: grid;
+place-items: center;
+}
+    
+:hover.menus_icon_slide{
+margin-right: 0;
+cursor: pointer;
+}
+    
+.fas.fa-check{
+background-color: white;
+border-radius: 50%;
+height: 2rem;
+width: 2rem;
+display: grid;
+place-items: center;
+color: #99E2D0;
+
+}
+    
+
+:hover.menus_icon_slide i{
+animation: quarter-spin 0.5s ease;
+}
+
+
+.Commander{
+display: flex;
+justify-content: center;
+}
+
+
+.btn_menu{
+width: 20%;
+margin-bottom: 10%;
+margin-top: 10%;
+color: white;
+font-weight: bold;
+border-radius: 50px;
+font-size: 20px;
+padding: 15px;
+border: none;
+background: linear-gradient(170deg, #ff79da, #9356dc);
+box-shadow: 0px 0px 12px 0px gray;
+transition: 250ms;
+text-align: center;
+cursor: pointer;
+}
+    
+:hover.btn_menu{
+transform: scale(1.02);
+opacity: 0.9;
+}
+
+@keyframes quarter-spin{
+  0%{
+    transform: rotate(-270deg); 
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+ 
+/*FOOTER*/
+
+ .footer_text{
+background-color: rgb(61, 59, 59);
+text-align: center;
+}
+                
+.footer_text i{
+color: white;
+padding: 5px 5px 5px 0px;
+}
+                
+.footer_text h2{
+color: white;
+font-family: Shrikhand,"cursive";
+}
+                
+                
+.footer__liste{
+color: white;
+text-decoration: none;
+}
