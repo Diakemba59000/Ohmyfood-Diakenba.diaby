@@ -177,7 +177,7 @@ transform: scale(1.02);
 opacity: 0.9;
 }
 
-@keyframes quarter-spin{
+@keyframes quarter-spin{ 
   0%{
     transform: rotate(-270deg); 
   }
@@ -202,6 +202,12 @@ height: 60vh;
 object-fit: cover
 }
 
+/* RESTAURANT 2 */
+.img_ledelice{
+width: 100%;
+height: 60vh;
+object-fit: cover
+}
 
 
 /*FOOTER*/
