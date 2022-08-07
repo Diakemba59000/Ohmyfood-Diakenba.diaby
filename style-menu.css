@@ -186,6 +186,17 @@ opacity: 0.9;
   }
 }
  
+
+/* RESTAURANT 2 */
+
+.img_lanote{
+width: 100%;
+height: 60vh;
+object-fit: cover
+}
+
+
+
 /*FOOTER*/
 
  .footer_text{
