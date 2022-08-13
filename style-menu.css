@@ -95,10 +95,43 @@ margin: 10px;
 overflow: hidden;
 box-shadow: 2px 1px 8px -3px black;
 white-space: nowrap; 
-cursor: pointer; 
+cursor: pointer;
+margin-right: 0;
+animation: appear 500ms both;
 }
-    
-    
+
+.dish_1 {
+    animation-delay: 50ms;
+  }
+  .dish_2{
+    animation-delay: 100ms;
+  }
+  .dish_3{
+    animation-delay: 150ms;
+  }
+  .dish_4{
+    animation-delay: 200ms;
+  }
+  .dish_5{
+    animation-delay: 250ms;
+  }
+  .dish_6{
+    animation-delay: 300ms;
+  }
+  .dish_7{
+    animation-delay: 350ms;
+  }
+  .dish_8{
+    animation-delay: 400ms;
+  }
+  .dish_9{
+    animation-delay: 450ms;
+  }
+  .dish_10{
+    animation-delay: 500ms;
+  }
+
+
 .menus_description h3,
 .menus_description P{
 margin: 0;
@@ -109,7 +142,7 @@ padding: 0;
 .menus_description{
 margin-top: 10px;
 }
-    
+
 
 .menus_items_price{
 margin-left: auto;
@@ -119,18 +152,15 @@ padding: 1rem;
     
 .menus_icon_slide{
 width: 4rem;
-background-color: #99E2D0;
 margin-right: -4rem;
+background-color: #99E2D0;
 transition: all 500ms;
 border-radius: 0 1rem 1rem 0;
 display: grid;
 place-items: center;
 }
     
-:hover.menus_icon_slide{
-margin-right: 0;
-cursor: pointer;
-}
+
     
 .fas.fa-check{
 background-color: white;
@@ -143,11 +173,11 @@ color: #99E2D0;
 
 }
     
-
-:hover.menus_icon_slide i{
+.menus_icon_slide:hover{
+margin-right: 0;
+cursor: pointer;
 animation: quarter-spin 0.5s ease;
 }
-
 
 .Commander{
 display: flex;
@@ -177,15 +207,7 @@ transform: scale(1.02);
 opacity: 0.9;
 }
 
-@keyframes quarter-spin{ 
-  0%{
-    transform: rotate(-270deg); 
-  }
-  100%{
-    transform: rotate(0);
-  }
-}
- 
+
 
 /* RESTAURANT 2 */
 
@@ -231,4 +253,88 @@ font-family: Shrikhand,"cursive";
 .footer__liste{
 color: white;
 text-decoration: none;
+}
+
+.arrow{
+position: absolute;
+top: 38px;
+left: 19px;
+text-decoration: none;
+color: black;
+}
+
+/* ANIMMATION*/
+
+
+@-webkit-keyframes quarter-spin{ 
+    0%{
+      transform: rotate(-270deg); 
+    }
+    100%{
+      transform: rotate(0);
+    }
+  }
+
+@keyframes quarter-spin{ 
+  0%{
+    transform: rotate(-270deg); 
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+ 
+@-webkit-keyframes appear {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+
+@keyframes appear {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+
+
+@media screen and (max-width: 768px){
+
+.bloc_restaurant h2{
+    font-size: 20px;
+   
+}
+
+.bloc_restaurant{
+    margin-left: 0;
+    width: 92%;
+}
+
+.heart_color{
+    margin-top: 25px;
+}
+
+.far.fa-heart{
+    margin-top: 25px;
+}
+
+.items__menus{
+    width: 90%;
+    font-size: 15px;
+}
+.btn_menu{
+    width: 50%;
+}
+
 }
