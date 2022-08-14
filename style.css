@@ -4,6 +4,83 @@
 box-sizing: border-box;
 }
 
+.chargement {
+position: fixed;
+background: rgba(255, 255, 255, 0.95);
+height: 100%;
+width: 100%;
+z-index: 1000;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+ -webkit-animation: loader 2s forwards;
+    animation: loader 2s forwards;
+  }
+  
+
+.chargement::before {
+content: "";
+height: 100px;
+width: 100px;
+border-top: 12px solid #9356DC;
+border-right: 12px solid #FF79DA;
+border-bottom: 12px solid #99E2D0;
+border-left: 12px solid #dbdbdb;
+border-radius: 100%;
+-webkit-animation: loader_roll 2s linear;
+    animation: loader_roll 2s linear;
+  }
+
+  
+
+  @-webkit-keyframes loader {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @keyframes loader {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  
+  @-webkit-keyframes loader_roll {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes loader_roll {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+
+
 
 body{
 height: 100%;
@@ -16,10 +93,10 @@ font-family: Roboto,sans-serif;
 .logo{
 text-align: center;
 font-family: Shrikhand,"cursive";
-margin: 0;
-box-shadow: 0px 3px 3px 1px gray;
+box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
 padding: 8px;
 position: relative;
+margin: 0;
 }
 
 
@@ -73,8 +150,9 @@ box-shadow: 0px 0px 12px 0px gray;
 transition: 250ms;
 }
 
-.bnt:hover{
-transform: scale(1.04);
+:hover.bnt{
+transform: scale(1.02);
+opacity: 0.9;
 }
 
 
@@ -194,8 +272,7 @@ bottom: 64px;
 display: flex;
 justify-content: flex-end;
 }
-
-
+    
 .fas.fa-heart{
 display: flex;
 justify-content: flex-end;
@@ -204,139 +281,52 @@ margin-right: 10px;
 position: relative;
 bottom: 96px;
 }
-
+    
 .heart_color{
 color: transparent;
 background: linear-gradient(#9356DC, #FF79DA);
 background-clip: text;
 -webkit-background-clip: text;
 opacity: 0;
+-webkit-transition: 700ms;
+transition: 700ms;
 }
-
-
+    
+    
 .heart_color:hover{
 opacity: 1;
+transform: scale(1);
 }
-
+ 
+.heart_vide :hover{
+opacity: 0;
+}
+    
 
 /*FOOTER*/
+
 
 .footer_text{
 background-color: rgb(61, 59, 59);
 text-align: center;
 }
-
+    
 .footer_text i{
 color: white;
 padding: 5px 5px 5px 0px;
 }
-
+    
 .footer_text h2{
 color: white;
 font-family: Shrikhand,"cursive";
 }
-
-
+    
+    
 .footer__liste{
 color: white;
 text-decoration: none;
 }
-
-
-/*RESTAURANT 1 */
-
-.img_palette{
-width: 100%;
-height: 60vh;
-object-fit: cover
-}
-            
-.bloc_restaurant h2{
-font-family: Shrikhand,"cursive";
-}
-            
-.bloc_restaurant{
-border-radius: 20px 20px 0px 0px;
-background: #f6f6f6;
-margin-top: -112px;
-position: relative;
-padding: 1rem;  
-width: 70%;
-margin-left: 14%;
-}
-            
-   
-.menus_restaurant{
-background: #f6f6f6;   
-}
-
-
-.menus_entrées{
-display: flex;
-flex-direction: column;
-}
-
-.title{
-border-bottom: 4px solid #99E2D0;
-width: 5%;
-}
-
-
-.items__entrées{
-display: flex;
-background-color: white;
-width: 80%;
-border-radius: 20px;
-height: 70px;
-padding: 1rem;
-border-radius: 20px;
-overflow: hidden;
-margin: 10px;
-}
-
-.items__plats{
-display: flex;
-background-color: white;
-width: 80%;
-border-radius: 20px;
-height: 70px;
-padding: 1rem;
-border-radius: 20px;
-overflow: hidden;
-margin: 10px;   
-}
-
-
-.items__deserts{
-display: flex;
-background-color: white;
-width: 80%;
-border-radius: 20px;
-height: 70px;
-padding: 1rem;
-border-radius: 20px;
-overflow: hidden;
-margin: 10px; 
-}
-
-.menus_description h3,
-.menus_description P{
-margin: 0;
-padding: 0;
-}
-
-
-.menus_items_price{
-margin-left: auto;
-padding: 1rem;
-}
-
-.menus_icon{
-width: -4rem;
-background-color: #99E2D0;
-margin-right: -4rem;
-}
-
+    
 
 
 @media screen and (max-width: 800px){
@@ -349,5 +339,11 @@ margin-right: -4rem;
     .cards_container a{
         min-width: 100%;
     }
+
+    .new{
+        margin-left: 50%;
+    }
 }
+
+
 
