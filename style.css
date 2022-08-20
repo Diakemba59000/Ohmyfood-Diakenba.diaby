@@ -4,82 +4,47 @@
 box-sizing: border-box;
 }
 
-.chargement {
-position: fixed;
-background: rgba(255, 255, 255, 0.95);
-height: 100%;
-width: 100%;
-z-index: 1000;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
--webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
- -webkit-animation: loader 2s forwards;
-    animation: loader 2s forwards;
+.loader {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 250%;
+    text-align: center;
+    animation: loader 1s ease-in-out 1.5s reverse both;
+    pointer-events: none;
   }
-  
-
-.chargement::before {
-content: "";
-height: 100px;
-width: 100px;
-border-top: 12px solid #9356DC;
-border-right: 12px solid #FF79DA;
-border-bottom: 12px solid #99E2D0;
-border-left: 12px solid #dbdbdb;
-border-radius: 100%;
--webkit-animation: loader_roll 2s linear;
-    animation: loader_roll 2s linear;
+  .loader__img {
+    margin: 10rem 0;
+  }
+  .loader__spinner {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid #99e2d0;
+    border-top-color: #9356dc;
+    margin: 10rem auto;
+    animation: spin 1.5s linear;
   }
 
-  
-
-  @-webkit-keyframes loader {
-    0% {
-      visibility: visible;
+  @keyframes spin {
+    to {
+      transform: rotate(0deg);
     }
-    100% {
-      visibility: hidden;
+    from {
+      transform: rotate(-360deg);
     }
   }
   @keyframes loader {
-    0% {
-      visibility: visible;
-    }
-    100% {
-      visibility: hidden;
-    }
-  }
-  
-  @-webkit-keyframes loader_roll {
-    0% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
+    to {
       opacity: 1;
     }
-    100% {
+    from {
       opacity: 0;
     }
   }
-  
-  @keyframes loader_roll {
-    0% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
 
 
+  
 
 
 body{
