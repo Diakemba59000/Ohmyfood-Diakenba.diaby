@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Shrikhand&display=swap');
 
 
-
 /*RESTAURANT 1 */
 
 .logo{
@@ -12,6 +11,8 @@ box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
 padding: 8px;
 position: relative;
 }
+
+/*REMPLISSAGE COEUR*/
 
 .far.fa-heart{
 font-size: 2rem;
@@ -46,18 +47,23 @@ transition: 700ms;
 opacity: 1;
 }
         
-        
+   
+/* IMAGE LOGO*/
                
 .img_palette{
 width: 100%;
 height: 60vh;
 object-fit: cover
 }
-                
+
+
+/* BLOC RESTAURANT*/
+
+
 .bloc_restaurant h2{
 font-family: Shrikhand,"cursive";
 }
-                
+            
 .bloc_restaurant{
 border-radius: 20px 20px 0px 0px;
 background: #f6f6f6;
@@ -83,7 +89,8 @@ flex-direction: column;
 border-bottom: 4px solid #99E2D0;
 width: 5%;
 }
-    
+
+/* MENUS RESTAURANT*/
       
 .items__menus{
 display: flex;
@@ -102,10 +109,6 @@ margin-right: 0;
 animation: appear 500ms both;
 }
 
-
-.items__menus :hover{
-  
-}
 
 .dish_1 {
 animation-delay: 100ms;
@@ -155,7 +158,9 @@ margin-top: 10px;
 margin-left: auto;
 padding: 1rem;
 }
-    
+
+
+/* CHECKMARCK*/    
     
 .menus_icon_slide{
 width: 4rem;
@@ -175,18 +180,79 @@ width: 2rem;
 display: grid;
 place-items: center;
 color: #99E2D0;
-
 }
     
 
 
+/* ANIMATION CHECKMARCK*/   
 
+.items__menus:hover .menus_icon_slide i{
+animation: quarter-spin 0.5s ease;
+margin-right: 0;
+cursor: pointer; 
+}
+    
+.items__menus:hover .menus_icon_slide{
+animation: appear 0.5s ease;
+margin-right: 0;
+cursor: pointer;   
+}
+    
+/* ANIMATION CHECKMARCK ROTATION*/   
+
+    
+@-webkit-keyframes quarter-spin{ 
+    0%{
+        transform: rotate(-270deg); 
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+    
+@keyframes quarter-spin{ 
+    0%{
+        transform: rotate(-270deg); 
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+/* ANIMATION APPARITION MENUS*/   
+     
+@-webkit-keyframes appear {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+    
+    
+@keyframes appear {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+    
+
+/* BOUTON COMMANDER*/   
 
 .Commander{
 display: flex;
 justify-content: center;
 }
-
 
 .btn_menu{
 width: 20%;
@@ -258,6 +324,9 @@ color: white;
 text-decoration: none;
 }
 
+
+/* FLECHE RETOUR*/
+
 .arrow{
 position: absolute;
 top: 38px;
@@ -288,8 +357,10 @@ color: black;
 }
 
 .far.fa-heart{
-    margin-top: 25px;
+    margin-top: -12px;
+    bottom: 39px;
 }
+
 
 .items__menus{
     width: 90%;
@@ -299,60 +370,10 @@ color: black;
     width: 50%;
 }
 
+.fuctionning li{
+padding: 18px;
+margin: 22px;
 }
 
-.items__menus:hover .menus_icon_slide i{
-animation: quarter-spin 0.5s ease;
-margin-right: 0;
-cursor: pointer; 
-
 }
 
-.items__menus:hover .menus_icon_slide{
-    animation: appear 0.5s ease;
-    margin-right: 0;
-    cursor: pointer;   
-}
-
-
-
-@-webkit-keyframes quarter-spin{ 
-    0%{
-      transform: rotate(-270deg); 
-    }
-    100%{
-      transform: rotate(0);
-    }
-  }
-
-@keyframes quarter-spin{ 
-  0%{
-    transform: rotate(-270deg); 
-  }
-  100%{
-    transform: rotate(0);
-  }
-}
- 
-@-webkit-keyframes appear {
-    0% {
-      transform: translateX(20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-
-@keyframes appear {
-    0% {
-      transform: translateX(20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
