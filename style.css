@@ -8,7 +8,9 @@ body{
 height: 100%;
 width: 100%;
 font-family: Roboto,sans-serif;
+margin: 0;
 }
+
     
 
 /*CHARGEMENT PAGE*/
@@ -280,6 +282,7 @@ opacity: 0;
 .footer_text{
 background-color: rgb(61, 59, 59);
 text-align: center;
+padding: 10px;
 }
     
 .footer_text i{
@@ -300,7 +303,18 @@ text-decoration: none;
     
 
 
+@media screen and (max-width: 1226px){
+
+    .loader{
+    height:100%;
+    }
+}
+
+
+
 @media screen and (max-width: 800px){
+
+   
       
     .functioning ol{
         flex-direction: row;
