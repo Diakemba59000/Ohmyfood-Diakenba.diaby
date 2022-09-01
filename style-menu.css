@@ -9,6 +9,7 @@ body{
     width: 100%;
     font-family: Roboto,sans-serif;
     margin: 0;
+    overflow-x: hidden;
     }
 
 /*RESTAURANT 1 */
@@ -328,6 +329,7 @@ object-fit: cover
  .footer_text{
 background-color: rgb(61, 59, 59);
 text-align: center;
+padding: 10px;
 }
                 
 .footer_text i{
